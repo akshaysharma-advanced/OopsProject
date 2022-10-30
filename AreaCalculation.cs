@@ -52,9 +52,11 @@ namespace OopsProject
         static void Main(string[] args)
         {
             Rectangle r = new(10,5);
+            int areaOfRectangle = r.Area();
             Square s = new (10, 10);
-            Console.WriteLine("Area of Rectangle is " + r + ".");
-            Console.WriteLine("Area of Square is " + s + ".");
+            int areaOfSquare = s.Area();
+            Console.WriteLine("Area of Rectangle is " + areaOfRectangle + ".");
+            Console.WriteLine("Area of Square is " + areaOfSquare + ".");
         }
     }
 }
