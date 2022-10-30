@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>OopsProject.HierarchicalInheritance</StartupObject>
+    <StartupObject>OopsProject.DifferentConstructors</StartupObject>
   </PropertyGroup>
 
 </Project>
