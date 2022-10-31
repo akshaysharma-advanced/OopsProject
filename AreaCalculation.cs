@@ -51,9 +51,9 @@ namespace OopsProject
     {
         static void Main(string[] args)
         {
-            Rectangle r = new(10,5);
+            Rectangle r = new Rectangle(10,5);
             int areaOfRectangle = r.Area();
-            Square s = new (10, 10);
+            Square s = new Square(10, 10);
             int areaOfSquare = s.Area();
             Console.WriteLine("Area of Rectangle is " + areaOfRectangle + ".");
             Console.WriteLine("Area of Square is " + areaOfSquare + ".");

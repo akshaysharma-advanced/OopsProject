@@ -10,7 +10,7 @@ namespace OopsProject
     //Abstract Class
     abstract class Vehicle
     {
-        //Abstract class without body
+        //Abstract method without body
         public abstract void Price();
 
         //Regular Method
