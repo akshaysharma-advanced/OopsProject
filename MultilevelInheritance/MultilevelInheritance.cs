@@ -29,14 +29,4 @@ namespace OopsProject
             Console.WriteLine("Ahmedabad");
         }
     }
-    internal class MultilevelInheritance
-    {
-        public static void Main(string[] args)
-        {
-            City myCity = new City();
-            myCity.CountryName();
-            myCity.StateName();
-            myCity.CityName();
-        }
-    }
 }

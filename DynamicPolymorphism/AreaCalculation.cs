@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OopsProject
+namespace OopsProject.DynamicPolymorphism
 {
     class Shape
     {
         protected int length, breadth;
 
-        public Shape( int lengthInput = 0, int breadthInput = 0)
+        public Shape(int lengthInput = 0, int breadthInput = 0)
         {
             length = lengthInput;
             breadth = breadthInput;
@@ -24,14 +24,14 @@ namespace OopsProject
 
     class Rectangle : Shape
     {
-        public Rectangle(int lengthInput = 0, int breadthInput = 0): base(lengthInput, breadthInput)
+        public Rectangle(int lengthInput = 0, int breadthInput = 0) : base(lengthInput, breadthInput)
         {
 
         }
 
         public override int Area()
         {
-            return (length * breadth);
+            return length * breadth;
         }
     }
 
@@ -39,24 +39,12 @@ namespace OopsProject
     {
         public Square(int lengthInput = 0, int breadthInput = 0) : base(lengthInput, breadthInput)
         {
-            
+
         }
 
         public override int Area()
         {
-            return (length * breadth);
-        }
-    }
-    internal class AreaCalculation
-    {
-        static void Main(string[] args)
-        {
-            Rectangle r = new Rectangle(10,5);
-            int areaOfRectangle = r.Area();
-            Square s = new Square(10, 10);
-            int areaOfSquare = s.Area();
-            Console.WriteLine("Area of Rectangle is " + areaOfRectangle + ".");
-            Console.WriteLine("Area of Square is " + areaOfSquare + ".");
+            return length * breadth;
         }
     }
 }

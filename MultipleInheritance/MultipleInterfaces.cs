@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OopsProject
+namespace OopsProject.MultipleInheritance
 {
     interface IFirstInterface
     {
@@ -16,7 +16,7 @@ namespace OopsProject
         void SecondInterfaceMethod(); //second inteface method
     }
 
-    class MultipleInheritanceClass: IFirstInterface, ISecondInterface
+    class MultipleInheritanceClass : IFirstInterface, ISecondInterface
     {
         public void FirstInterfaceMethod()
         {
@@ -26,15 +26,5 @@ namespace OopsProject
         {
             Console.WriteLine("This is Second Interface Method!");
         }
-    }
-    internal class MultipleInterfaces
-    {
-        static void Main(string[] args)
-        {
-            MultipleInheritanceClass myObj = new MultipleInheritanceClass();
-            myObj.FirstInterfaceMethod();
-            myObj.SecondInterfaceMethod();
-        }
-      
     }
 }

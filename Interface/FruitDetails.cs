@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OopsProject
+namespace OopsProject.Interface
 {
     //Fruit Interface
     interface IFruit
@@ -16,12 +16,12 @@ namespace OopsProject
     //Apple implements the IFruit interface
     class Apple : IFruit
     {
-       public void FruitName()
+        public void FruitName()
         {
             //The body of FruitName() is provided here
             Console.WriteLine("Fruit Name: Apple");
         }
-        
+
         public void FruitColor()
         {
             // The body of FruitColor() is provided here
@@ -60,23 +60,5 @@ namespace OopsProject
             Console.WriteLine("Fruit Color: Yellow");
             Console.WriteLine();
         }
-    }
-    internal class FruitDetails
-    {
-        static void Main(string[] args)
-        {
-            Apple myApple = new Apple(); //Create an Apple object
-            myApple.FruitName();
-            myApple.FruitColor();
-
-            Mango myMango = new Mango(); //Create an Apple object
-            myMango.FruitName();
-            myMango.FruitColor();
-
-            Papaya myPapaya = new Papaya(); //Create an Apple object
-            myPapaya.FruitName();
-            myPapaya.FruitColor();
-        }
-        
     }
 }
